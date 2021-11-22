@@ -115,31 +115,58 @@
 ##
 
 
-11.  How do you see changes for one file only? 
+#### 11.  How do you see changes for one file only? 
 
 
-Answer:: git diff foo
+#### Answer:: 
+
+     git diff foo
+
+##
 
 
-12. How do you pick only certain commits for merging two branches? 
-
-Answer:: git cherry-pick
 
 
-13. How do you compare two branches? 
-
-Answer:: git diff
+#### 12. How do you pick only certain commits for merging two branches? 
 
 
-14. How do youcompare two commits?
+#### Answer:: 
 
-Answer::  git diff
+     git cherry-pick
+
+##
 
 
-15.  How can you do interactive rebase 
 
 
-Answer:: git rebase -i
+#### 13. How do you compare two branches? 
+
+#### Answer:: 
+
+     git diff
+
+##
+
+
+
+
+#### 14. How do youcompare two commits?
+
+#### Answer::  
+
+     git diff
+
+##
+
+
+#### 15.  How can you do interactive rebase 
+
+#### Answer:: 
+
+     git rebase -i
+
+##
+
 
 
 16.  What does rebase do to your branch?
