@@ -55,16 +55,26 @@
 
 ##
 
-5. git says "You ares ahead of HEAD by 1 commit". What does this mean?
+
+#### 5. git says "You ares ahead of HEAD by 1 commit". What does this mean?
 
 
-Answer:: Your local copy of the branch has 1 commit that has not been pushed to remote version of the repo.
+#### Answer:: 
+
+     Your local copy of the branch has 1 commit that has not been pushed to remote version of the repo.
+
+##
 
 
-6. You have working on a new version of your code for hours. Now, it is a mess and you are not making any progress. You simply start over and get rid of all your uncommited changes. How do you do that?
+#### 6. You have working on a new version of your code for hours. Now, it is a mess and you are not making any progress. You simply start over and get rid of all your uncommited changes. How do you do that?
 
 
-Answer:: git reset hard
+#### Answer:: 
+
+     git reset hard
+
+##
+HERE
 
 
 7. You just did git fetch --all.  You like to see who has done what to this code base recently. What is a good way to see that?
