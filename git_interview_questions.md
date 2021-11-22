@@ -169,59 +169,104 @@
 
 
 
-16.  What does rebase do to your branch?
+#### 16.  What does rebase do to your branch?
 
-Answer:: Makes your branch look like it came from a different commit than it did originally (basically moves the marker).
+#### Answer:: 
 
+     Makes your branch look like it came from a different commit than it did originally (basically moves the marker).
 
-17. What is a "tag" in git?
-
-Answer:: git tag is like a branch that does not change. (Meant for releases) like v1.0.1.
-
-
-18. Can you "move" HEAD ?
-
-Answer:: Yes!
+##
 
 
-19. What are some of the companies that host git software for us?
+#### 17. What is a "tag" in git?
+
+#### Answer:: 
+
+     git tag is like a branch that does not change. (Meant for releases) like v1.0.1.
+
+##
 
 
-Answer:: Gitlab, Github, Gerrit etc.
+
+#### 18. Can you "move" HEAD ?
+
+#### Answer:: 
+
+     Yes!
+
+##
 
 
-20. What are two ways you can authenticate with git providers?
 
-Answer:: web-based user/password combo AND CLI-based using ssh
+#### 19. What are some of the companies that host git software for us?
 
+#### Answer:: 
 
-21. Can you have more one "remote"s for your local copy?
+     Gitlab, Github, Gerrit etc.
 
-Answer:: Yes.
-
-
-22. You are helping a friend. He lets you have access to his terminal. The current directory is local copy of a remote git repo. BUT, he has no idea where this codebase came from. What is a good way to find that out?
+##
 
 
-Answer:: git remote -v
+#### 20. What are two ways you can authenticate with git providers?
+
+#### Answer:: 
+
+     web-based user/password combo AND CLI-based using ssh
+
+##
+
+
+#### 21. Can you have more one "remote"s for your local copy?
+
+#### Answer:: 
+
+     Yes.
+
+##
+
+
+#### 22. You are helping a friend. He lets you have access to his terminal. The current directory is local copy of a remote git repo. BUT, he has no idea where this codebase came from. What is a good way to find that out?
+
+
+#### Answer:: 
+
+     git remote -v
      It will show which remote repos his code base came from or will push to.
 
 
-23. What command lets you create a connection between a local and remote repository?  
-
-Answer:: git remote add
+##
 
 
-24. You made some changes to your local copy of the code base. You have added the new or modified files to the "staging area" using git add command. If you are done with your work, what should be your next steps?
+##### 23. What command lets you create a connection between a local and remote repository?  
 
-Answer:: git commit to commit all your changes
+
+#### Answer:: 
+
+     git remote add
+
+
+##
+
+
+#### 24. You made some changes to your local copy of the code base. You have added the new or modified files to the "staging area" using git add command. If you are done with your work, what should be your next steps?
+
+#### Answer:: 
+
+     git commit to commit all your changes
      git push to push your changes to the remote repo branch where it came from.
 
+##
 
 
-25. When you run git commit command, how can you add a message so that everyone gets a quick summary of what changes were made or why?
+#### 25. When you run git commit command, how can you add a message so that everyone gets a quick summary of what changes were made or why?
 
-Answer:: git commit -m "some message"
+#### Answer:: 
+
+     git commit -m "some message"
+
+##
+
+
 
 
 26. Can you have more than 1 stash?
