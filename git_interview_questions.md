@@ -269,147 +269,244 @@
 
 
 
-26. Can you have more than 1 stash?
+#### 26. Can you have more than 1 stash?
 
-Answer:: Yes
+#### Answer:: 
 
+     Yes
 
-27. What command can your run to see the FILES in the latest stash? 
-
-Answer:: git stash list
-
-
-28. When you create a stash, how you give it a name?
-
-Answer::  git stash push -m "foo"
+##
 
 
-29. How can you restore some previously stashed work to a new branch?
 
-Answer:: git stash branch
+#### 27. What command can your run to see the FILES in the latest stash? 
+
+#### Answer:: 
+
+     git stash list
+
+##
 
 
-30. Your colleage just gave you access to a VM that has a local copy of repo. She did not tell you anything else. For example, are you on branch or on master? Do you have new files that are not staged? Do you have commits that have not been pushed? How can you find out all these information without any help from anyone else?
 
-Answer:: You can simply run "git stats".
+#### 28. When you create a stash, how you give it a name?
+
+#### Answer::  
+
+     git stash push -m "foo"
+
+##
 
 
-31. What is the difference between git fetch amd git pull ?
+#### 29. How can you restore some previously stashed work to a new branch?
+
+#### Answer:: 
+
+     git stash branch
+
+##
+
+
+#### 30. Your colleage just gave you access to a VM that has a local copy of repo. She did not tell you anything else. For example, are you on branch or on master? Do you have new files that are not staged? Do you have commits that have not been pushed? How can you find out all these information without any help from anyone else?
+
+#### Answer:: 
+
+     You can simply run "git stats".
+
+##
+
+
+
+#### 31. What is the difference between git fetch amd git pull ?
  
+#### Answer:: 
 
-Answer:: git fetch updates remote tracking branches with changes from a remote repository, while git pull updates remote tracking branches with changes from a remote repository and merges them into their corresponding local branches.
+     git fetch updates remote tracking branches with changes from a remote repository, while git pull updates remote tracking branches with changes from a remote repository and merges them into their corresponding local branches.
 
-
-32. What is the difference between git push --force and git push --force-with-lease?
-
-Answer:: force-with-lease is a safer option. It will not overwrite any one else's commits that have come in in the meantime.
+##
 
 
-33. What is the difference between git log and git reflog?
+#### 32. What is the difference between git push --force and git push --force-with-lease?
 
-Answer:: git log shows current HEAD and its ancestry. Current commit --> it's parent -> it's parent  and so on
+#### Answer:: 
+
+     force-with-lease is a safer option. It will not overwrite any one else's commits that have come in in the meantime.
+
+##
+
+
+#### 33. What is the difference between git log and git reflog?
+
+#### Answer:: 
+
+     git log shows current HEAD and its ancestry. Current commit --> it's parent -> it's parent  and so on
      git reflog does not traverse the ancestry at all. It is basically an undo path for your repo.
 
-
-34. How can you remove all untracked files?
-
-
-Answer:: git clean
+##
 
 
-35. What if you need to examine a file line by line? 
+#### 34. How can you remove all untracked files?
 
-Answer:: git blame foofile
+#### Answer:: 
 
+     git clean
 
-36. How does git pull ¿rebase help?
-
-Answer:: It keeps history clean and avoids multiple merges
-
-
-37. "git merge foo" does what? 
+##
 
 
-Answer:: Merges foo branch with your current branch
+#### 35. What if you need to examine a file line by line? 
+
+#### Answer:: 
+
+     git blame foofile
+
+##
 
 
-38. Is there an opposite of git add?
+#### 36. How does git pull --rebase help?
+
+#### Answer:: 
+
+     It keeps history clean and avoids multiple merges
+
+##
 
 
-Answer:: Yes!  git rm
+#### 37. "git merge foo" does what? 
+
+#### Answer:: 
+
+     Merges foo branch with your current branch
+
+##
 
 
-39. How can you details about a particular commit?
+#### 38. Is there an opposite of git add?
 
-Answer:: git show commit_sha to get details on that commit
+#### Answer:: 
 
+     Yes!  git rm
 
-40. git log is kind of verbose, how can you get a summarizied version?
-
-
-Answer::  git shortlog to get summary of logs
-
-
-41. What command do your run to start a fesh new local repo?
-
-Answer:: git init
-
-
-42. Command to set up your name and your email to go with your commits?
-
-Answer:: git config
-
-
-43. What is so special about git bisect command when you are trying to find the buggy commit?
-
-Answer:: git bisect lets you choose a starting point and end point. It will let you split the difference and you decide which half has the buggy code and which one does not. It lets you keep doing this (in binary search way) until you find the buggy commit. This makes search for your buggy code much quicker.
-
-
-44. When you run git merge , what can you do so that all your micro-commits gets merged into one commit so that it is easy to read the history later on?
-
-Answer:: git merge --squash
+##
 
 
 
-45. What is the difference between "git stash" and "git stash pop" commands?
+#### 39. How can you details about a particular commit?
+
+#### Answer:: 
+
+     git show commit_sha to get details on that commit
+
+##
 
 
-Answer:: "git stash" creates a stash entry (put away the files)
+#### 40. git log is kind of verbose, how can you get a summarizied version?
+
+#### Answer::  
+
+     git shortlog to get summary of logs
+
+##
+
+
+#### 41. What command do your run to start a fesh new local repo?
+
+#### Answer:: 
+
+     git init
+
+##
+
+
+#### 42. Command to set up your name and your email to go with your commits?
+
+#### Answer:: 
+
+     git config
+
+##
+
+
+
+#### 43. What is so special about git bisect command when you are trying to find the buggy commit?
+
+#### Answer:: 
+
+    git bisect lets you choose a starting point and end point. It will let you split the difference and you decide which half has the buggy code and which one does not. It lets you keep doing this (in binary search way) until you find the buggy commit. This makes search for your buggy code much quicker.
+
+
+##
+
+
+#### 44. When you run git merge , what can you do so that all your micro-commits gets merged into one commit so that it is easy to read the history later on?
+
+#### Answer:: 
+
+     git merge --squash
+
+##
+
+
+
+#### 45. What is the difference between "git stash" and "git stash pop" commands?
+
+
+#### Answer:: 
+
+     "git stash" creates a stash entry (put away the files)
      BUT, "git stash pop" places the saved state onto the working directory.
 
 
-46. What is the difference between "git reset --soft" and "git reset -hard" ?
+#### 46. What is the difference between "git reset --soft" and "git reset -hard" ?
  
+#### Answer:: 
 
-Answer:: A soft reset only changes the commit that HEAD points to, 
+     A soft reset only changes the commit that HEAD points to, 
      On the other hand, a hard reset resets the index and working tree to match the specified commit, discarding any changes.
 
 
-47. What conflicts can occur if you do a force push after rebasing?
+#### 47. What conflicts can occur if you do a force push after rebasing?
+
+#### Answer::  
+
+     You can lose existing changes that's on the remote master branch. 
+
+##
 
 
-Answer::  You can lose existing changes that's on the remote master branch. 
+#### 48: What is trunk-based development?
+
+#### Answer:: 
+
+     Trunk-based development is a version control management practice where developers merge small, frequent updates to a core trunk or main branch.
+
+##
 
 
-48: What is trunk-based development?
+#### 49. What is the advantage of having trunk-based development?
 
-Answer:: Trunk-based development is a version control management practice where developers merge small, frequent updates to a core trunk or main branch.
+#### Answer:: 
 
+     You avoid creating long-lived development branches
 
-
-49. What is the advantage of having trunk-based development?
-
-Answer:: You avoid creating long-lived development branches
+##
 
 
-50: Which command to use to see what branh you are on or to add /delete a branch?
+#### 50: Which command to use to see what branh you are on or to add /delete a branch?
 
-Answer:: git branch
+#### Answer:: 
+
+     git branch
+
+##
 
 
-51: What is detached head state?
+#### 51: What is detached head state?
 
-Answer:: When you use git checkout to checkout a commit instead of branch.  ANy work here will not have a path back to any branch.
+#### Answer:: 
 
+     When you use git checkout to checkout a commit instead of branch.  ANy work here will not have a path back to any branch.
+
+##
 
 
