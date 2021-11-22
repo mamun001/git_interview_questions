@@ -74,30 +74,45 @@
      git reset hard
 
 ##
-HERE
+
+### 7. You just did git fetch --all.  You like to see who has done what to this code base recently. What is a good way to see that?
+
+#### Answer:: 
+
+     git log
+
+##
 
 
-7. You just did git fetch --all.  You like to see who has done what to this code base recently. What is a good way to see that?
+#### 8. What is your github ID?
 
-Answer:: git log
+#### Answer:: 
 
+     Be ready to provide this and be sure to have to plenty of your codes in your public repo.
 
-8. What is your github ID?
-
-Answer:: be ready to provide this and be sure to have to plenty of your codes in your public repo.
-
-
-9. Why would you need git rebase?
-
-Answer:: Use of git rebase in multi-faceted and nuanced. But, most obvious benefit is ease of reviw.
+##
 
 
 
-10. Why do you need git? What problem does it solve?
+#### 9. Why would you need git rebase?
+
+#### Answer:: 
+
+     Use of git rebase in multi-faceted and nuanced. But, most obvious benefit is ease of reviw.
+
+##
 
 
-ans: When multiple engineers work on the same repositories, there is a need for version control, accountibility, and ability to split and merge code as needed.
+#### 10. Why do you need git? What problem does it solve?
+
+
+#### Answer:: 
+
+     When multiple engineers work on the same repositories, there is a need for version control, accountibility, and ability to split and merge code as needed.
      Git does those and lot more.
+
+
+##
 
 
 11.  How do you see changes for one file only? 
