@@ -12,7 +12,7 @@
 ####     What are the steps that you would go through?
 
 
-#### Answer:wer: 
+#### Answer:
 
        1. git clone
        2. git pull
@@ -29,7 +29,7 @@
 #### 2. You made some changes directly to develop branch and committed and pushed. Next day, you did a pull and you saw that your changes are gone. How can this happen?
 
 
-#### Answer:wer: 
+#### Answer:
  
      Someone else did a push to the same branch without doing a pull first.
 
@@ -39,17 +39,21 @@
 #### 3. Without knowing you made 20 changes on your local copy of the master branch. Now you have a dilemma. You don't want to push to the master branch directly (dangerous). At the same time, you also don't want to lose all these changes. What do you do?
 
 
-#### Answer:wer: 
+#### Answer:
 
      use git stash to save your changes, pull down master branch again, create a new branch, call the stashed away changes and apply to this new branch.
 
 ##
 
 
-4. You ran "git checkout newbranch", but you got a funny error : something like: did not match any blah blah. What's happeing here?
+#### 4. You ran "git checkout newbranch", but you got a funny error : something like: did not match any blah blah. What's happeing here?
 
-Answer:: You are trying to create a new branch. For that you need add the "-b" option
 
+#### Answer:: 
+
+     You are trying to create a new branch. For that you need add the "-b" option
+
+##
 
 5. git says "You ares ahead of HEAD by 1 commit". What does this mean?
 
